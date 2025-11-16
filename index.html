@@ -10,19 +10,22 @@
         integrity="sha384-9ndCyUa6m7e9s6C8POWx1Z7QgCv4grGDR7R3kR7iZ8iF8Y8xC5Y5d5jF6i2i0i1i"
         crossorigin="anonymous">
 
-  <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body class="start-screen">
 
-  <section id="home">
-    <div id="globe-container">
-      <img id="rotating-globe" src="/assets/globe.jpg" alt="Globe">
+  <section id="home" class="hero">
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-title">Lock-Ad</h1>
+      <p class="hero-sub">Walking navigation for safer, faster routes — pick your origin or use your current location</p>
     </div>
 
-    <div class="overlay-content">
-      <h1 class="app-title">Lock-Ad</h1>
-      <button id="startBtn" class="btn start-btn">Start</button>
+    <div class="hero-cta">
+      <button id="startBtn" class="btn start-btn outline">Get started</button>
     </div>
   </section>
 
