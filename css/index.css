@@ -65,3 +65,71 @@
   from { transform: rotate(90deg); }
   to   { transform: rotate(450deg); }
 }
+
+.hero
+{
+  position: relative;
+  height: 100vh;
+  background: no-repeat center/cover url('../assets/globe.jpg');
+  display: block;
+  overflow: hidden;
+}
+.hero-overlay 
+{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.6) 80%);
+  z-index: 1;
+}
+.hero-content 
+{
+  position: absolute;
+  left: 6%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  color: #fff;
+  max-width: 54%;
+}
+.hero-title 
+{
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: clamp(2.8rem, 8vw, 5.2rem);
+  line-height: 0.95;
+  margin: 0 0 0.6rem 0;
+  letter-spacing: 0.6px;
+}
+.hero-sub 
+{
+  margin: 0;
+  color: rgba(255,255,255,0.9);
+  font-size: 1rem;
+}
+
+.hero-cta
+{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 3.5rem;
+  z-index: 2;
+}
+.start-btn.outline 
+{
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.92);
+  color: #fff;
+  padding: 0.9rem 2.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: background .18s, transform .12s;
+}
+.start-btn.outline:hover { background: rgba(255,255,255,0.06); transform: translateY(-2px); }
+
+@media (max-width: 560px) 
+{
+  .hero-content { left: 5%; max-width: 86%; }
+  .hero-title { font-size: clamp(2.2rem, 10vw, 3.4rem); }
+  .hero-cta { bottom: 2.2rem; }
+}
