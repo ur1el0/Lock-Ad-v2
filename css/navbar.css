@@ -1,0 +1,28 @@
+.navbar-dark .navbar-toggler-icon { filter: brightness(0) invert(1); }
+
+.brand-title { color: #ffffff; font-size: 1.1rem; letter-spacing: 0.6px; }
+
+.logo-img { width: 36px; height: 36px; object-fit: cover; border-radius: 8px; }
+
+.offcanvas-start { background: #0a0d12; }
+.offcanvas-header { border-bottom: 1px solid rgba(255,255,255,0.05); padding: 0.8rem 1rem; }
+.offcanvas-title { color: #fff; font-size: 1.1rem; }
+.offcanvas-body { padding: 0 !important; }
+
+.nav { padding: 0.5rem 0; }
+.nav-link { color: #e6eef8; padding: 0.75rem 1rem; border: none; font-size: 0.95rem; transition: background 0.15s; }
+.nav-link:hover { background: rgba(255,255,255,0.05); color: #fff; }
+.nav-link.nav-sub { padding-left: 2rem; font-size: 0.9rem; color: #9fb0c8; }
+.nav-divider { height: 1px; background: rgba(255,255,255,0.03); margin: 0.3rem 0; }
+.nav-section-title { display: block; padding: 0.6rem 1rem 0.4rem 1rem; font-size: 0.8rem; font-weight: 600; color: #5f7a94; text-transform: uppercase; letter-spacing: 0.5px; }
+
+body.light-mode .navbar, body.light-mode .navbar-dark { background-color: #ffffff !important; }
+body.light-mode .navbar-toggler-icon { filter: brightness(0) invert(0) !important; }
+body.light-mode .navbar-dark .navbar-text, body.light-mode .navbar .brand-title { color: #1a202c !important; }
+body.light-mode .offcanvas-start { background: #f5f7fa !important; }
+body.light-mode .offcanvas-title { color: #1a202c !important; }
+body.light-mode .nav-link { color: #1a202c !important; }
+body.light-mode .nav-link:hover { background: rgba(0,0,0,0.05) !important; }
+body.light-mode .nav-section-title { color: #5f7a94 !important; }
+body.light-mode .nav-divider { background: rgba(0,0,0,0.1) !important; }
+body.light-mode .offcanvas-header { border-bottom-color: rgba(0,0,0,0.05) !important; }

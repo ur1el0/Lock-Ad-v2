@@ -1,0 +1,45 @@
+body { background: #071022; color: #e6eef8; font-family: 'Inter', system-ui, -apple-system, sans-serif; min-height: 100vh; padding: 1.5rem; transition: background 0.3s, color 0.3s; }
+body.light-mode { background: #f5f7fa !important; color: #1a202c !important; }
+
+.container { max-width: 800px; margin: 0 auto; }
+
+.back-link { color: #9fb0c8; text-decoration: none; font-size: 0.95rem; margin-bottom: 1.5rem; display: inline-flex; align-items: center; gap: 0.5rem; }
+.back-link:hover { color: #e6eef8; }
+body.light-mode .back-link { color: #5f7a94; }
+body.light-mode .back-link:hover { color: #1a202c; }
+
+.page-title { font-size: 2rem; font-weight: 700; margin-bottom: 2rem; color: #fff; }
+body.light-mode .page-title { color: #1a202c; }
+
+.settings-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.03); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; }
+body.light-mode .settings-card { background: rgba(0,0,0,0.02); border: 1px solid rgba(0,0,0,0.05); }
+
+.card-title { font-size: 1.2rem; font-weight: 600; margin-bottom: 1rem; color: #fff; display: flex; align-items: center; gap: 0.6rem; }
+.card-title i { color: #ff8a2b; }
+body.light-mode .card-title { color: #1a202c; }
+
+.setting-item { display: flex; align-items: center; justify-content: space-between; padding: 0.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.02); }
+body.light-mode .setting-item { border-bottom-color: rgba(0,0,0,0.05); }
+.setting-item:last-child { border-bottom: none; }
+
+.setting-label { display: flex; flex-direction: column; gap: 0.2rem; }
+.setting-name { font-weight: 600; color: #e6eef8; }
+body.light-mode .setting-name { color: #1a202c; }
+
+.setting-desc { font-size: 0.85rem; color: #9fb0c8; }
+body.light-mode .setting-desc { color: #5f7a94; }
+
+.toggle-switch { position: relative; display: inline-block; width: 50px; height: 26px; background: #3a4a5f; border-radius: 13px; cursor: pointer; transition: background 0.3s; }
+.toggle-switch.active { background: #ff8a2b; }
+.toggle-switch::after { content: ''; position: absolute; width: 22px; height: 22px; background: white; border-radius: 50%; top: 2px; left: 2px; transition: left 0.3s; }
+.toggle-switch.active::after { left: 26px; }
+body.light-mode .toggle-switch { background: #cbd5e1; }
+body.light-mode .toggle-switch.active { background: #ff8a2b; }
+
+p { margin: 0; }
+body.light-mode p { color: #5f7a94; }
+
+body.light-mode { color: #1a202c !important; }
+body.light-mode .offcanvas-title { color: #1a202c !important; }
+body.light-mode .offcanvas-header { border-bottom-color: rgba(0,0,0,0.05) !important; }
+body.light-mode .nav-divider { background: rgba(0,0,0,0.1) !important; }

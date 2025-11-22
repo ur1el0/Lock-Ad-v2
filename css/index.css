@@ -1,3 +1,15 @@
+/* Light mode theme overrides */
+body.light-mode { background: #f5f7fa !important; color: #1a202c !important; }
+body.light-mode .hero-overlay { background: linear-gradient(180deg, rgba(0,0,0,0.12) 0%, rgba(0,0,0,0.35) 80%) !important; }
+body.light-mode .hero-content, body.light-mode .hero-title, body.light-mode .hero-sub { color: #ffffff !important; }
+body.light-mode .navbar, body.light-mode .navbar-dark { background-color: #ffffff !important; }
+body.light-mode .navbar-toggler-icon { filter: brightness(0) invert(0) !important; }
+body.light-mode .navbar-dark .navbar-text, body.light-mode .navbar .brand-title { color: #1a202c !important; }
+body.light-mode .offcanvas-start { background: #f5f7fa !important; }
+body.light-mode .nav-link { color: #1a202c !important; }
+body.light-mode .nav-link:hover { background: rgba(0,0,0,0.05) !important; }
+body.light-mode .nav-section-title { color: #5f7a94 !important; }
+
 .start-screen 
 {
   background: #0f0f0f;
@@ -20,12 +32,12 @@
 
 #rotating-globe 
 {
-  width: 120vw;
-  height: 120vh;
+  width: 90vw;
+  height: 90vh;
   object-fit: cover;
   border-radius: 50%;
-  animation: spin 40s linear infinite;
-  filter: sepia(0.1) saturate(1.1) drop-shadow(0 0 30px rgba(255, 122, 0, 0.3));
+  /* static globe for readability — removed continuous rotation */
+  filter: sepia(0.06) saturate(1.05) drop-shadow(0 0 14px rgba(255, 122, 0, 0.18));
   transform: rotate(90deg);
 }
 
@@ -60,11 +72,7 @@
 .start-btn:hover { background: #ff8f26; transform: scale(1.04); }
 .start-btn:active { transform: scale(0.98); }
 
-@keyframes spin
-{
-  from { transform: rotate(90deg); }
-  to   { transform: rotate(450deg); }
-}
+/* removed spin animation to reduce motion and improve focus */
 
 .hero
 {
@@ -90,6 +98,7 @@
   z-index: 2;
   color: #fff;
   max-width: 54%;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.45);
 }
 .hero-title 
 {
@@ -112,7 +121,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 3.5rem;
+  bottom: 2.8rem;
   z-index: 2;
 }
 .start-btn.outline 
@@ -120,12 +129,16 @@
   background: transparent;
   border: 2px solid rgba(255,255,255,0.92);
   color: #fff;
-  padding: 0.9rem 2.4rem;
+  padding: 0.8rem 2.1rem;
   border-radius: 999px;
   font-weight: 600;
-  transition: background .18s, transform .12s;
+  transition: background .14s, transform .12s;
 }
 .start-btn.outline:hover { background: rgba(255,255,255,0.06); transform: translateY(-2px); }
+
+.brand-title { color: #ffffff; font-size: 1.1rem; letter-spacing: 0.6px; }
+
+.logo-img { width:36px; height:36px; object-fit:cover; border-radius: 8px; }
 
 @media (max-width: 560px) 
 {
